@@ -17,22 +17,35 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
   <style>
+      body {
+        background-color: #F4F5F6;
+      }
       .header  {
         display: flex;
         flex-direction: row;
+        background-color: #fff;
         justify-content: space-between;
         padding: .5rem 3rem;
-        height: 3rem;
+        height: 4rem;
+        margin-bottom: 1rem;
         box-shadow:
-          6.5px 6.7px 3.6px rgba(0, 0, 0, 0.038),
-          17.9px 18.7px 10px rgba(0, 0, 0, 0.055),
-          43.1px 44.9px 24.1px rgba(0, 0, 0, 0.072),
-          143px 149px 80px rgba(0, 0, 0, 0.11)
+                10px 10px 80px rgba(0, 0, 0, 0.06)
       ;
+      }
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
       }
       .header #logo img {
         height: 3rem;
@@ -64,6 +77,118 @@
         column-gap: 1rem;
         margin: 0;
       }
+      .main_content {
+        width: 95%;
+        display: flex;
+        column-gap: 4rem;
+      }
+      .sidebar {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding-top: 3rem;
+        padding-left: 1rem;
+      }
+      .sidebar .sidebar_list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding-left: 1rem;
+      }
+      .sidebar a {
+        font-size: 1.2rem;
+      }
+      .products {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .sidebar_wrapper {
+        width: 20%;
+        height: 70vh;
+        border-radius: 10px;
+        box-shadow:
+                10px 10px 80px rgba(0, 0, 0, 0.1)
+      ;
+      }
+      .products_wrapper {
+        width: 80%;
+      }
+      .sidebar .sidebar_list-item img {
+        width: 1.8rem;
+        margin-right: .5rem;
+      }
+      .products .product_card {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0 24px rgba(46,52,64,.08);
+      }
+      .products .product_card img {
+        width: 100%;
+        transition: scale .7s;
+
+      }
+      .products .product_card-image {
+        height: 65%;
+        max-height: 75%;
+        overflow: hidden;
+        box-shadow:
+                0.5px 0.5px 10px rgba(0, 0, 0, 0.02),
+                4px 4px 80px rgba(0, 0, 0, 0.04)
+      ;
+      }
+      .products .product_card:hover img {
+        scale: 110%;
+      }
+      .products .product_card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 2rem;
+        font-weight: 500;
+        height: 35%;
+      }
+      .inner_text {
+        font-size: .8rem;
+        background-color: green;
+        padding: .4rem .7rem;
+        border-radius: 8px;
+        color: #fff;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+
+      }
+      .products .product_card-image a {
+        overflow: hidden;
+        position:relative;
+        display: flex;
+      }
+      select {
+        appearance: none;
+        border: 0;
+        outline: 0;
+        width: 3rem;
+        padding: .1rem .8rem .1rem .1rem;
+        color: #000;
+        border-radius: 0.25em;
+        box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        text-align: right;
+        margin: 1rem 1.5rem .5rem 0;
+      }
+      .count_selector a {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: .3rem 1rem;
+      }
   </style>
 </head>
 
@@ -89,6 +214,63 @@
       </ul>
     </div>
   </header>
+  <main class="main">
+    <div class="main_content">
+      <div class="sidebar_wrapper">
+        <div class="sidebar">
+          <ul class="sidebar_list">
+            <li class="sidebar_list-item"><a href="#"><img src="img/MaterialSymbolsFilterFrames.svg" alt="Cerceve">Çerceveler</a></li>
+            <li class="sidebar_list-item"><a href="#"><img src="img/pano1.svg" alt="Pano">Pano</a></li>
+            <li class="sidebar_list-item"><a href="#"><img src="img/usb.svg" alt="Usb">Usb</a></li>
+            <li class="sidebar_list-item"><a href="#"><img src="img/box.svg" alt="Fotobox">Fotobox</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="products_wrapper">
+        <div class="products">
+          <div class="product_card">
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd1.jpg" alt="Product">
+              </a>
+            </div>
+            <div class="product_card-text">
+              <a href="#">
+                25x25 Fine Cerceve
+              </a>
+              <div class="count_selector">
+                <select name="count" id="prdcount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <a href="#">Sepete Ekle</a>
+              </div>
+            </div>
+          </div>
+          <div class="product_card">
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd2.jpg" alt="Product">
+              </a>
+            </div>
+            <div class="product_card-text"><a href="#">25x25 Cerceve</a></div>
+          </div>
+          <div class="product_card">
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd3.jpg" alt="Product">
+                <span class="inner_text">Kargo Bedava</span>
+              </a>
+            </div>
+            <div class="product_card-text"><a href="#">25x25 Fine</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="js/app.js"></script>
 
 </body>
