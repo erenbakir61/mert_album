@@ -22,4 +22,4 @@
 *Not: Navbar sadece tasarim olarak yapilmistir, site sadece gorsel olarak kodlanmistir harici etkilesim icermez.*
 <br>
 
-*Not2: Urunlere ait bilgiler, tasarimda gozukmesi amaciyla ekstra eklendiginden dolayi static olarak girilmistir. Sadece Sidebar icerigi ve yonlendirmesi dynamic sekilde yapilmis ve ajax ile cekilmistir.*
+*Not2: Urunlere ait bilgiler, tasarimda estetik gorunum saglanmasi amaciyla ekstra eklendiginden dolayi static olarak girilmistir. Sadece Sidebar icerigi ve yonlendirmesi dynamic sekilde yapilmis ve ajax ile cekilmistir.*
