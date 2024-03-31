@@ -1,0 +1,39 @@
+{
+  "productlist": [
+    {
+      "id": 149,
+      "name": "Trend Masa Çerçevesi 3lü (Siyah)",
+      "imagepath": "images/extraproduct/1617455454.jpg"
+    },
+    {
+      "id": 148,
+      "name": "Trend Masa Çerçevesi 3lü (Natural)",
+      "imagepath": "images/extraproduct/1617455216.jpg"
+    },
+    {
+      "id": 95,
+      "name": "25x25 Fine Çerçeve(3 Adet)",
+      "imagepath": "images/extraproduct/fine-cerceve-3lu.jpg"
+    },
+    {
+      "id": 94,
+      "name": "25x25 Fine Çerçeve(1 Adet)",
+      "imagepath": "images/extraproduct/fine-cerceve-tekli.jpg"
+    },
+    {
+      "id": 69,
+      "name": "Trend Masa Çerçevesi (Siyah)",
+      "imagepath": "images/extraproduct/1617455454.jpg"
+    },
+    {
+      "id": 61,
+      "name": "Trend Masa Çerçevesi (Natural)",
+      "imagepath": "images/extraproduct/1617455216.jpg"
+    },
+    {
+      "id": 55,
+      "name": "Master Masa Çerçevesi",
+      "imagepath": "images/extraproduct/1617451429.jpg"
+    }
+  ]
+}

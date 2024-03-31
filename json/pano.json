@@ -1,0 +1,44 @@
+{
+  "productlist": [
+    {
+      "id": 168,
+      "name": "Master Pano Beyaz",
+      "imagepath": "images/extraproduct/1631288196.jpg"
+    },
+    {
+      "id": 167,
+      "name": "Master Pano Gri",
+      "imagepath": "images/extraproduct/1631288196.jpg"
+    },
+    {
+      "id": 145,
+      "name": "40x60 Fine Pano",
+      "imagepath": "images/extraproduct/fine-pano-40x60.jpg"
+    },
+    {
+      "id": 93,
+      "name": "Duvar pano",
+      "imagepath": "images/extraproduct/1631270382.png"
+    },
+    {
+      "id": 68,
+      "name": "Trend Pano (Siyah)",
+      "imagepath": "images/extraproduct/1631288290.jpg"
+    },
+    {
+      "id": 65,
+      "name": "Eko Pano (Kahve)",
+      "imagepath": "images/extraproduct/1617716201.jpg"
+    },
+    {
+      "id": 60,
+      "name": "Trend Pano (Natural)",
+      "imagepath": "images/extraproduct/1631288265.jpg"
+    },
+    {
+      "id": 54,
+      "name": "Master Pano Siyah",
+      "imagepath": "images/extraproduct/1631288196.jpg"
+    }
+  ]
+}

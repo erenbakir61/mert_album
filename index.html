@@ -23,224 +23,9 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
-  <style>
-      body {
-        background-color: #F4F5F6;
-      }
-      .header  {
-        display: flex;
-        flex-direction: row;
-        background-color: #fff;
-        justify-content: space-between;
-        padding: .5rem 3rem;
-        height: 4rem;
-        margin-bottom: 1rem;
-        box-shadow:
-                10px 10px 80px rgba(0, 0, 0, 0.06)
-      ;
-      }
-      main {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-      }
-      .header #logo img {
-        height: 3rem;
-      }
-      ul {
-        list-style: none;
-      }
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-      .header .nav_left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .header .nav_left .navbar_content-list {
-        display: flex;
-        column-gap: 1rem;
-        margin: 0;
-      }
-      .header .nav_right {
-        display: flex;
-        align-items: center;
-      }
-      .header .nav_right .nav_reg {
-        display: flex;
-        flex-direction: row;
-        column-gap: 1rem;
-        margin: 0;
-      }
-      .main_content {
-        width: 95%;
-        display: flex;
-        column-gap: 4rem;
-      }
-      .sidebar {
-        background-color: #fff;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        padding-top: 3rem;
-        padding-left: 1rem;
-      }
-      .sidebar .sidebar_list {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-        padding-left: 1rem;
-      }
-      .sidebar a {
-        font-size: 1.2rem;
-      }
-      .products {
-        width: 80%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-      }
-      .sidebar_wrapper {
-        width: 20%;
-        height: 70vh;
-        border-radius: 10px;
-        box-shadow:
-                10px 10px 80px rgba(0, 0, 0, 0.1)
-      ;
-      }
-      .products_wrapper {
-        width: 80%;
-      }
-      .sidebar .sidebar_list-item img {
-        width: 1.8rem;
-        margin-right: .5rem;
-      }
-      .products .product_card {
-        width: 20rem;
-        height: 17rem;
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
-        text-align: center;
-        background-color: #fff;
-        box-shadow: 0 0 24px rgba(46,52,64,.08);
-      }
-      .products .product_card img {
-        width: 100%;
-        transition: scale .7s;
-
-      }
-      .products .product_card-image {
-        height: 70%;
-        max-height: 75%;
-        overflow: hidden;
-        box-shadow:
-                0.5px 0.5px 10px rgba(0, 0, 0, 0.02),
-                4px 4px 80px rgba(0, 0, 0, 0.04)
-      ;
-      }
-      .products .product_card:hover .product_card-image img {
-        scale: 110%;
-      }
-      .products .product_card:hover .product_features {
-        opacity: 1;
-      }
-      .products .product_card-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: 2rem;
-        font-weight: 500;
-        height: 30%;
-      }
-      .product_card-image .inner_text {
-        font-size: .8rem;
-        padding: .4rem .7rem;
-        border-radius: 8px;
-        color: #fff;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-      }
-      .product_card-image .inner_text.kargo_bedava {
-          background-color: #008170 ;
-      }
-      .product_card-image .inner_text.popular {
-          background-color: #1F6E8C;
-      }
-      .product_card-image .inner_text.cok_satan {
-          background-color: #E3651D;
-      }
-      .products .product_card-image a {
-        overflow: hidden;
-        position:relative;
-        display: flex;
-      }
-      .product_features {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: #ffffff;
-        background-color: rgba(93, 176, 176, 0.9);
-        opacity: 0;
-        z-index: 3;
-        transition: all .5s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .product_features img {
-        width: 3rem!important;
-      }
-      .product_features .product_like {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-
-      }
-      .product_features .product_like img {
-        border: 2px solid #ddd;
-        padding: 8px;
-        border-radius: 50%;
-        transition: all .5s;
-      }
-      .product_features .product_addbasket {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid transparent;
-        padding: .2rem .5rem;
-        border-radius: 7px;
-        transition: all .5s;
-      }
-      .product_features .product_addbasket:hover {
-        background-color: #31363F;
-      }
-      .product_features .product_like img:hover {
-        border: 2px solid #31363F;
-        background-color: #31363F;
-      }
-      .product_features .product_addbasket a {
-        color: #ffffff;
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-  </style>
 </head>
 
 <body>
-
   <header class="header">
     <div class="nav_left">
       <div id="logo"><img src="img/logo.png" alt="Mert Album Logo"></div>
@@ -265,16 +50,130 @@
     <div class="main_content">
       <div class="sidebar_wrapper">
         <div class="sidebar">
-          <ul class="sidebar_list">
-            <li class="sidebar_list-item"><a href="#"><img src="img/MaterialSymbolsFilterFrames.svg" alt="Cerceve">Çerceveler</a></li>
-            <li class="sidebar_list-item"><a href="#"><img src="img/pano1.svg" alt="Pano">Pano</a></li>
-            <li class="sidebar_list-item"><a href="#"><img src="img/usb.svg" alt="Usb">Usb</a></li>
-            <li class="sidebar_list-item"><a href="#"><img src="img/box.svg" alt="Fotobox">Fotobox</a></li>
+          <ul class="sidebar_list" id="sidebar_list">
+
           </ul>
         </div>
       </div>
       <div class="products_wrapper">
         <div class="products">
+          <div class="product_card">
+            <div class="product_features">
+              <div class="product_like">
+                <a href="#"><img src="img/heart.svg" alt="Begen"></a>
+              </div>
+              <div class="product_addbasket">
+                <a href="#"><img src="img/shopping_cart.svg" alt="Sepete Ekle"> Sepete Ekle</a>
+              </div>
+            </div>
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd1.jpg" alt="Product">
+                <span class="inner_text cok_satan">Çok Satan</span>
+              </a>
+            </div>
+            <div class="product_card-text">
+              <a href="#">
+                25x25 Fine Cerceve
+              </a>
+              <div class="product_rating">
+                <img src="img/star.svg" alt="Rating">
+                <img src="img/star.svg" alt="Rating">
+                <img src="img/star.svg" alt="Rating">
+                <img src="img/star.svg" alt="Rating">
+                (61)
+              </div>
+            </div>
+          </div>
+          <div class="product_card">
+            <div class="product_features">
+              <div class="product_like">
+                <a href="#"><img src="img/heart.svg" alt="Begen"></a>
+              </div>
+              <div class="product_addbasket">
+                <a href="#"><img src="img/shopping_cart.svg" alt="Sepete Ekle"> Sepete Ekle</a>
+              </div>
+            </div>
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd2.jpg" alt="Product">
+                <span class="inner_text popular">Popüler</span>
+              </a>
+            </div>
+            <div class="product_card-text"><a href="#">25x25 Cerceve</a></div>
+          </div>
+          <div class="product_card">
+            <div class="product_features">
+              <div class="product_like">
+                <a href="#"><img src="img/heart.svg" alt="Begen"></a>
+              </div>
+              <div class="product_addbasket">
+                <a href="#"><img src="img/shopping_cart.svg" alt="Sepete Ekle"> Sepete Ekle</a>
+              </div>
+            </div>
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd3.jpg" alt="Product">
+                <span class="inner_text kargo_bedava">Kargo Bedava</span>
+              </a>
+            </div>
+            <div class="product_card-text"><a href="#">25x25 Fine</a></div>
+          </div>
+          <div class="product_card">
+            <div class="product_features">
+              <div class="product_like">
+                <a href="#"><img src="img/heart.svg" alt="Begen"></a>
+              </div>
+              <div class="product_addbasket">
+                <a href="#"><img src="img/shopping_cart.svg" alt="Sepete Ekle"> Sepete Ekle</a>
+              </div>
+            </div>
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd1.jpg" alt="Product">
+                <span class="inner_text cok_satan">Çok Satan</span>
+              </a>
+            </div>
+            <div class="product_card-text">
+              <a href="#">
+                25x25 Fine Cerceve
+              </a>
+            </div>
+          </div>
+          <div class="product_card">
+            <div class="product_features">
+              <div class="product_like">
+                <a href="#"><img src="img/heart.svg" alt="Begen"></a>
+              </div>
+              <div class="product_addbasket">
+                <a href="#"><img src="img/shopping_cart.svg" alt="Sepete Ekle"> Sepete Ekle</a>
+              </div>
+            </div>
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd2.jpg" alt="Product">
+                <span class="inner_text popular">Popüler</span>
+              </a>
+            </div>
+            <div class="product_card-text"><a href="#">25x25 Cerceve</a></div>
+          </div>
+          <div class="product_card">
+            <div class="product_features">
+              <div class="product_like">
+                <a href="#"><img src="img/heart.svg" alt="Begen"></a>
+              </div>
+              <div class="product_addbasket">
+                <a href="#"><img src="img/shopping_cart.svg" alt="Sepete Ekle"> Sepete Ekle</a>
+              </div>
+            </div>
+            <div class="product_card-image">
+              <a href="#">
+                <img src="img/prd3.jpg" alt="Product">
+                <span class="inner_text kargo_bedava">Kargo Bedava</span>
+              </a>
+            </div>
+            <div class="product_card-text"><a href="#">25x25 Fine</a></div>
+          </div>
           <div class="product_card">
             <div class="product_features">
               <div class="product_like">
@@ -335,6 +234,22 @@
     </div>
   </main>
   <script src="js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    var categories = []
+    $(document).ready(function (){
+      $(document).ready(function () {
+        $.get('http://localhost:8080/json/products.json', function (data,status){
+          categories = JSON.parse(JSON.stringify(data))
+          for (let category of categories.categorylist) {
+            $('#sidebar_list').append(`
+            <li className="sidebar_list-item"><a href="${'pages/' + category.id + '.html'}"><img src="img/${category.name}.svg" alt="${category.name}">${category.name}</a></li>
+          `)
+          }
+        })
+      })
+    })
+  </script>
 
 </body>
 
