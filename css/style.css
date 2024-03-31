@@ -177,7 +177,7 @@ a {
   top: 0;
   left: 0;
   color: #ffffff;
-  background-color: rgba(145, 200, 228, 0.9);
+  background-color: rgba(18, 18, 18, 0.8);
   opacity: 0;
   z-index: 3;
   transition: all .5s;
