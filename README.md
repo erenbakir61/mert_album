@@ -1,25 +1,22 @@
-# Mert Album Magaza Design For Case
+# Mert Albüm Mağaza Bölümü Tasarımı
 
-## Projeyi Calistirmak Icin
+## Projeyi Çalıştırmak İçin
 
->git clone https://github.com/erenbakir61/mert_album
-> 
->cd mert_album
-> 
->npm install
-> 
->npm run start
-> 
-> // Browser uzerinden localhost:8080/ 'a giriniz.
+- ``git clone https://github.com/erenbakir61/mert_album``
+- ``cd mert_album``
+- ``npm install``
+- ``npm run start``
+
+- ``// Browser uzerinden localhost:8080/ 'a giriniz.``
 
 
 <br>
 <br>
 
-*Kullanilan Teknolojiler:  HTML5, CSS3, JavaScript, Ajax, Bootstrap*
+*Kullanılan Teknolojiler:  HTML5, CSS3, JavaScript, Ajax, Bootstrap*
 <br>
 
-*Not: Navbar sadece tasarim olarak yapilmistir, site sadece gorsel olarak kodlanmistir harici etkilesim icermez.*
+*Not: Navbar sadece tasarım olarak yapılmıştır, site sadece görsel olarak kodlanmıştır harici etkileşim içermez.*
 <br>
 
-*Not2: Urunlere ait bilgiler, tasarimda estetik gorunum saglanmasi amaciyla ekstra eklendiginden dolayi static olarak girilmistir. Sadece Sidebar icerigi ve yonlendirmesi dynamic sekilde yapilmis ve ajax ile cekilmistir.*
+*Not2: Ürünlere ait bilgiler, tasarımda estetik görünüm sağlanması amacıyla ekstra eklendiğinden dolayı static olarak girilmiştir. Sadece Sidebar içeriği ve yönlendirmesi dynamic şekilde yapılmış ve ajax ile çekilmiştir.*
