@@ -18,9 +18,15 @@ npm run start
 
 
 
+
+
+
 *Kullanilan Teknolojiler:*  HTML5, CSS3, JavaScript, Bootstrap
+
 
 *Not:* Navbar sadece tasarim olarak yapilmistir, site sadece gorsel olarak kodlanmistir harici etkilesim icermez.
 
+
 *Not2:* Urun isimlerinde bulunan adet sayilari image kismina koyuldugu icin site static yapilmistir datalar ajax ile cekilmemistir.
+
 
