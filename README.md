@@ -16,12 +16,10 @@
 <br>
 <br>
 
-*Kullanilan Teknolojiler:*  HTML5, CSS3, JavaScript, Bootstrap
+*Kullanilan Teknolojiler:  HTML5, CSS3, JavaScript, Ajax, Bootstrap*
 <br>
 
-*Not:* Navbar sadece tasarim olarak yapilmistir, site sadece gorsel olarak kodlanmistir harici etkilesim icermez.
+*Not: Navbar sadece tasarim olarak yapilmistir, site sadece gorsel olarak kodlanmistir harici etkilesim icermez.*
 <br>
 
-*Not2:* Urun isimlerinde bulunan adet sayilari image kismina koyuldugu icin site static yapilmistir datalar ajax ile cekilmemistir.
-
-
+*Not2: Urunlere ait bilgiler, tasarimda gozukmesi amaciyla ekstra eklendiginden dolayi static olarak girilmistir. Sadece Sidebar icerigi ve yonlendirmesi dynamic sekilde yapilmis ve ajax ile cekilmistir.*
