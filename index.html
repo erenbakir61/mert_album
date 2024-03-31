@@ -122,7 +122,8 @@
       }
       .products .product_card {
         width: 20rem;
-        height: 20rem;
+        height: 17rem;
+        position: relative;
         border-radius: 10px;
         overflow: hidden;
         text-align: center;
@@ -135,7 +136,7 @@
 
       }
       .products .product_card-image {
-        height: 65%;
+        height: 70%;
         max-height: 75%;
         overflow: hidden;
         box-shadow:
@@ -146,6 +147,9 @@
       .products .product_card:hover img {
         scale: 110%;
       }
+      .products .product_card:hover .product_features {
+        opacity: 1;
+      }
       .products .product_card-text {
         display: flex;
         flex-direction: column;
@@ -153,7 +157,7 @@
         justify-content: center;
         margin-left: 2rem;
         font-weight: 500;
-        height: 35%;
+        height: 30%;
       }
       .inner_text {
         font-size: .8rem;
@@ -164,30 +168,51 @@
         position: absolute;
         top: 5%;
         right: 5%;
-
       }
       .products .product_card-image a {
         overflow: hidden;
         position:relative;
         display: flex;
       }
-      select {
-        appearance: none;
-        border: 0;
-        outline: 0;
-        width: 3rem;
-        padding: .1rem .8rem .1rem .1rem;
-        color: #000;
-        border-radius: 0.25em;
-        box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        text-align: right;
-        margin: 1rem 1.5rem .5rem 0;
+      .product_features {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #ffffff;
+        background-color: rgba(93, 176, 176, 0.9);
+        opacity: 0;
+        z-index: 3;
+        transition: all .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      .count_selector a {
+      .product_features img {
+        width: 3rem!important;
+      }
+      .product_features .product_like {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+      }
+      .product_features .product_like img {
         border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: .3rem 1rem;
+        padding: 8px;
+        border-radius: 50%;
+      }
+      .product_features .product_addbasket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .product_features .product_addbasket a {
+        color: #ffffff;
+
       }
   </style>
 </head>
@@ -238,16 +263,6 @@
               <a href="#">
                 25x25 Fine Cerceve
               </a>
-              <div class="count_selector">
-                <select name="count" id="prdcount">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-                <a href="#">Sepete Ekle</a>
-              </div>
             </div>
           </div>
           <div class="product_card">
@@ -259,6 +274,14 @@
             <div class="product_card-text"><a href="#">25x25 Cerceve</a></div>
           </div>
           <div class="product_card">
+            <div class="product_features">
+              <div class="product_like">
+                <a href="#"><img src="img/heart.svg" alt="Begen"></a>
+              </div>
+              <div class="product_addbasket">
+                <a href="#"><img src="img/shopping_cart.svg" alt="Sepete Ekle"> Sepete Ekle</a>
+              </div>
+            </div>
             <div class="product_card-image">
               <a href="#">
                 <img src="img/prd3.jpg" alt="Product">
