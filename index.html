@@ -267,7 +267,7 @@
   var categories = []
   $(document).ready(function (){
     $(document).ready(function () {
-      $.get('http://localhost:8080/json/products.json', function (data,status){
+      $.get('https://mertalbum.com/test/getcategorylist', function (data,status){
         categories = JSON.parse(JSON.stringify(data))
         for (let category of categories.categorylist) {
           $('#sidebar_list').append(`
