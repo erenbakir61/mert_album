@@ -1,4 +1,6 @@
 # Mert Albüm Mağaza Bölümü Tasarımı
+### Önemli Not: Bu proje MERT ALBÜM firması için test case olarak yapılmıştır. <br> 
+### Kullanılan teknolojiler ve diğer kısımlar tamamen firmanın yönergeleri ile seçilmiştir. <br> <br>
 
 ## Projeyi Çalıştırmak İçin
 
